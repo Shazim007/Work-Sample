@@ -333,4 +333,10 @@
     #project-grid{
       grid-template-columns: 1fr;
     }
+    nav h2{
+    background: var(--red);
+    border-radius: 20px ;
+    box-shadow: 0 0 15px var(--red);
+    top:60px
+    }
   }
