@@ -28,7 +28,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
   }
   nav h2{
     float: left;
