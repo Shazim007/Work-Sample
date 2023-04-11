@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <title>library</title>
+   
+   <!-- internal css -->
+   <style>
+        #pdf-container{
+            justify-content: center;
+            display: flex;
+        }
+        iframe{
+            margin-top: 70px;
+            width: 90%;
+            height: 90vh;
+        }
+
+        /* hide toolbar in mozilla */
+        #outerContainer #mainContainer div.toolbar{
+            display: none !important;
+        }
+        #outerContainer #mainContainer #viewerContainer{
+            top:0 !important;
+        }
+    </style>
+    <!-- internal css end -->
+
+</head>
+<body>
+
+
+
+    <header>
+        <div class="logo"> <img src="photos/logo2.jpeg" alt="logo"></div>
+        <nav>
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html#home" class="dropbtn" >Home</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="dropbtn">About us</a>
+                </li>
+                <div class="dropdown">
+                    <a href="semester.html"><button class="dropbtn">Semester</button></a>
+                    <div class="dropdown-content">
+                        <a href="semester.html#sem-1">Semester 1</a>
+                        <a href="semester.html#sem-2">Semester 2</a>
+                        <a href="semester.html#sem-3">Semester 3</a>
+                    </div>
+                </div>
+
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#my-library" class="dropbtn" style="background: darkcyan;">E-Library</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#blog" class="dropbtn">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="dropbtn">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="pdf-container">
+    <iframe src="MBA-library.pdf#toolbar=0&statusbar=0&navpanes=0&scrollbar=0"  frameborder="0"></iframe>
+</div>
+</body>
+</html>
