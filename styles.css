@@ -35,6 +35,7 @@
     color: white;
     position: absolute;
     left: 2%;
+    top:60px;
     font-size: 30px;
   }
   .nav-link{
@@ -337,6 +338,6 @@
     background: var(--red);
     border-radius: 20px ;
     box-shadow: 0 0 15px var(--red);
-    top:60px
+    top:60px;
     }
   }
