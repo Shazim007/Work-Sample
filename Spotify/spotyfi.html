@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="brand"><img src="logo.png" alt="logo"><span>spotify</span></div>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songlist-container">
+            <h1>Atif Aslam All-songs</h1>
+            
+            <div class="songlistbox">
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="0" src="play-btn.png" class="song-play clone dis-btn"></span>
+                </span>
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="1" src="play-btn.png" class="song-play"></span>
+                </span>
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="2" src="play-btn.png" class="song-play"></span>
+                </span>
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="3" src="play-btn.png" class="song-play"></span>
+                </span>
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="4" src="play-btn.png" class="song-play"></span>
+                </span>
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="5" src="play-btn.png" class="song-play"></span>
+                </span>
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="6" src="play-btn.png" class="song-play"></span>
+                </span>
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="7" src="play-btn.png" class="song-play"></span>
+                </span>
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="8" src="play-btn.png" class="song-play"></span>
+                </span>
+                <!-- songlist-row -->
+                <span class="songlist-row">
+                    <img class="album" alt="song">
+                    <span class="song-name">song-name</span>
+                    <span class="song-duration">5:30 <img id="9" src="play-btn.png" class="song-play"></span>
+                </span>
+            </div>
+
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <!-- gif -->
+    <div class="gif-container">
+        <img src="playing.gif" id="gif" alt="playing">
+    </div>
+    <!-- boottom part -->
+    <div class="bottom">
+        <input type="range" name="range" value="0" id="range">
+
+        <!-- icon start -->
+        <div class="icon">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+            <!-- <img src="play-btn.png" class="song-play clone dis-btn"> -->
+        </div>
+        <!-- icon ends -->
+    </div>
+
+    <!-- java script -->
+    <script src="spotify.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

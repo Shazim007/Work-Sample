@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college finder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><h3>college finder</h3>
+            <i class="fa-duotone fa-map-location-dot"></i></div>
+        <nav>
+            <ul class="active-btn-line home">                
+            <li><a class="active-btn" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <!-- update 2.0 -->
+            <div class="left-box">
+                <h3>coures list</h3>
+                <div class="coures">
+                    <ul>
+                        <li>MBA <span>2years</span></li>
+                        <li>B-Tech <span>4years</span></li>
+                        <li>BCA <span>3years</span></li>
+                        <li>B-Pharma <span>4years</span></li>
+                        <li>BSc <span>3years</span></li>
+                        <li>LAW <span>4years</span></li>
+                        <li>LLB <span>2years</span></li>
+                        <li>B-COM <span>3years</span></li>
+                        <li>MBA <span>2years</span></li>
+                        <li>B-Tech <span>4years</span></li>
+                        <li>BCA <span>3years</span></li>
+                        <li>B-Pharma <span>4years</span></li>
+                        <li>BSc <span>3years</span></li>
+                        <li>LAW <span>4years</span></li>
+                        <li>LLB <span>2years</span></li>
+                        <li>B-COM <span>3years</span></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- update 2.0  end -->
+            <div class=" hover" id="bg">
+                
+            <h2 class="heading" id="heading" onclick="addList()">select your city</h2>
+            
+            <div class="city-container" >
+                
+                <div class="city active"><a onclick="bgChanger1(),addList1()"> jalgoan </a></div>
+                <div class="city"><a onclick="bgChanger2(),addList2()"> bhusawl </a></div>
+                <div class="city"><a onclick="bgChanger3(),addList3()"> sakegoun </a></div>
+                <div class="city"><a onclick="bgChanger4(),addList4()"> Chalisgaon </a></div>
+                <div class="city"><a onclick="bgChanger5(),addList5()"> VARANGAON </a></div>
+                <div class="city "><a onclick="bgChanger6(),addList6() "> Raver  </a></div>
+            </div>  
+
+            <!-- ......................... -->
+
+            <!-- <div class="city-container" >
+                
+                <div class="city"><a href="city/jalgaon.html"> jalgoan </a></div>
+                <div class="city"><a href="city/bhusawal.html"> bhusawl </a></div>
+                <div class="city"><a href="city/sakegoan.html"> sakegoun </a></div>
+                <div class="city"><a href="city/chalisgaon.html"> Chalisgaon </a></div>
+                <div class="city"><a href="city/varangaon.html"> VARANGAON </a></div>
+                <div class="city"><a href="city/raver.html"> Raver  </a></div>
+            </div> -->
+        </div>
+        </section>
+        
+        <section>
+            <div class="college-container">
+                <div class="college-list" id="listBox">
+                    <h3>college list</h3>
+        
+                    <li><a class="list-heading">collage name</a>
+                        <a class="list-heading">city</a>
+                        <a class="list-heading">Website</a>
+                    </li>
+                    <li><a class="collage-name" href="">KYDSC Trusts Institute Of Management & Science, Bhusawal</a>
+                        <a class="city-name" href="">Bhusawal</a>
+                        <a class="visit" href="">Website</a>
+                    </li>
+                    <li><a class="collage-name" href="">Godavari Foundation's Godavari English Medium School</a>
+                        <a class="city-name" href="">bhusawal</a>
+                        <a class="visit" href="">Website</a>
+                    </li>
+                    <li><a class="collage-name" href="">PODAR INTERNATIONAL SCHOOL CHALISGAON</a>
+                        <a class="city-name" href="">Chalisgaon</a>
+                        <a class="visit" href="">Website</a>
+                    </li>
+                    <li><a class="collage-name" href="">Shree Swaminarayan English Medium School</a>
+                        <a class="city-name" href="">city</a>
+                        <a class="visit" href="">Website</a>
+                    </li>
+                    <li><a class="collage-name" href="">JAWAHAR NAVODAYA VIDYALAYA</a>
+                        <a class="city-name" href="">sakegoun</a>
+                        <a class="visit" href="">Website</a>
+                    </li>
+                    <li><a class="collage-name" href="">L.H. Patil English Medium School
+                        </a>
+                        <a class="city-name" href="">city</a>
+                        <a class="visit" href="">Website</a>
+                    </li>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+footer
+    </footer>
+    <script src="city.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>

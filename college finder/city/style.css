@@ -1,0 +1,275 @@
+*{
+    
+    /* border: 2px solid darkcyan; */
+}
+
+body{
+    /* border: 2px solid #d4f23e; */
+    margin: 0;
+    
+}
+
+header{
+    display: flex;
+    /* border: 2px solid salmon; */
+    justify-content: space-around;
+    /* box-shadow: 10px 5px 10px rgb(245, 255, 57); */
+    /* background-color: yellow; */
+}
+nav{
+    
+    /* border: 2px solid maroon; */
+    width: 60%;
+    float: right;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    float: right;
+    /* border: 2px solid green; */
+    transition:right 2s;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, .15);
+}
+.active-btn-line::after{
+    content: "";
+    background: rgb(237, 190, 120);
+    height: 3px;
+    width: 8rem;
+    position: absolute;
+    transition: 2s;
+}
+.home::after{
+    right: 23.9rem;    
+}
+.about::after{
+    right: 15.4rem;
+}
+.contact::after{   
+    right: 7rem;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    list-style: none;
+    margin: 5px;
+    /* border: #000000 solid 2px; */
+    width:100%;
+    /* height: 4rem; */
+    /* padding: 5px; */
+    
+}
+/* nav ul li:hover{
+    background-color: yellow;
+    pointer-events: none;
+} */
+nav ul li a {
+    pointer-events: auto;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li a:hover{
+  /* background: aquamarine; */
+    background: rgb(234, 205, 123);
+
+  padding:5px;
+  box-shadow: 0 2px 2px;
+  border-radius: 5px;
+}
+.active-btn{
+  background: rgb(242, 195, 66);
+  padding:5px;
+  box-shadow: 0 2px 2px;
+  border-radius: 5px;
+}
+main{
+    /* border: 2px solid rgb(22, 21, 21); */
+    background: whitesmoke;
+    /* height: 90vh; */
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover{
+    /* margin: 5px; */
+    margin-top: 10%;
+    border: 1px solid transparent;
+    border-bottom: #000000 solid 2px;
+    background: url("image/JALGAON.png");
+    background-size: 45%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* animation: rotate 1s linear; */
+}
+
+.hover:hover  .city-container{
+    /* background: red; */
+    background:snow;
+    /* background-color: transparent; */
+    transform:  translateY(0%)
+    scaleY(1);
+
+}
+
+@keyframes rotate {
+    0%{border-bottom: #000000 solid 2px;}
+    50%{border-right: #000000 solid 2px;}
+    100%{border-top: #000000 solid 2px;}
+}
+.heading{
+    text-transform: capitalize;
+    text-align: center;
+    
+
+}
+
+.city-container{
+    border: .5px solid black;
+    display: grid;
+    gap: 2rem;
+    /* width: 50%; */
+    height: auto;
+    padding: 2rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr )); */
+    background:#000000;
+        transform:  translateY(-50%)
+    scaleY(0);
+    transition: .5s;
+
+    
+}
+.city{
+    border: 2px solid black;
+    width: 9rem;
+    height: 3rem;
+    /* padding: 8px; */
+    
+}
+.city a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    /* box-sizing: content-box; */
+    text-decoration: none;
+    /* text-align: center; */
+    width: 9rem;
+    height: 3rem;
+    /* padding: 1.5rem; */
+    background: wheat;
+    transform: translateY(-30%)
+    translateX(10%);
+    transition: .3s;
+    color:black;
+}
+.city a:hover{
+    transform: translateY(0%)
+    translateX(0%);
+    
+}
+footer{
+    color: aliceblue;
+    background: #000000;
+    border: 2px solid #000000;
+    height: 5rem;
+}
+
+
+@media (min-width: 650px) {
+    .city-container { grid-template-columns: repeat(2, 1fr); }
+    
+}
+
+  @media (min-width: 1000px) {
+    .city-container { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  /* section 2 */
+.college-container{
+    border: 2px solid black;
+    /* height: 80vh; */
+    width: 60%;
+    margin: 15px;
+}
+.college-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+
+.college-list h3{
+    text-align: center;
+    background: thistle;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+.college-list li{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* background:#e3f2fd ; */
+    background: burlywood;
+    margin: 8px;
+    border-radius: 20px;
+    width: 80%;
+    height: 4rem;
+    padding: 5px;
+    list-style: none ;
+}
+.college-list li a{
+    text-decoration: none;
+    color: black;
+    /* font-size:2rem; */
+    text-transform: capitalize;
+    /* border:  .01px solid black; */
+    text-align: center;
+    border-collapse: collapse;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blanchedalmond ;
+}
+.list-heading{
+    background: seagreen;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.city-name , .collage-name , .visit{
+    /* font-size: medium; */
+    text-align: center;
+   
+    
+}
+.collage-name {
+    text-align: left;
+justify-content: flex-start;}
+.city-name{
+    border-left: .2px  solid black;
+    border-right: .2px solid black;
+}
+
+
+  /* section 2 end */
+  

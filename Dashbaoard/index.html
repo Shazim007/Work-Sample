@@ -1,0 +1,514 @@
+[11:22 am, 24/09/2022] Sakshi BT:
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            /* background-color: #04AA6D; */
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 900px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                /* float: right; */
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color:#1f1e30;">
+
+    <div class="topnav" id="myTopnav">
+
+        <a href="#home" class="active" style="color: black;"><b>EMS - Mathura Refinery - Home</b></a>
+        <div class="nav">
+
+            <a href="#news" class="active1" class="icon" onclick="myFunction()"><i class="fa fa-home" aria-hidden="true"
+                    style="color: black; font-size: 18px;"></i></a>
+
+            <a href="#news" class="active2"><i class='fas fa-user-circle' style="margin: 0 6px;"></i><b>System
+                    Addminstration</b></a>
+
+            <a href="#contact" class="active3"><i class='fas fa-power-off' style="font-size:18px;margin-left: 4px; "><i
+                        class="fa fa-bars" style="font-size:18px ; margin: 0 19px; "></i></i></a>
+
+            <a href="#about" class="active4" style="color: red;font-size: 18px;"><b>Honywell</b><img
+                    src="IndianOilLogo.jpeg"
+                    style="height: 16px; width: 32px; position: relative; left: 12px; bottom: 2px;"></a>
+
+            <!-- <a href="javascript:void(0);" class="icon" >
+    <i class="fa fa-bars"></i> -->
+            <!-- </a> -->
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="para" style="color: white; margin-left: 19px; font-size: 19px; line-height: 3.428571;">Total throughput
+        Processed: <b>2560</b>
+        <sub>MT/Day</sub> CPP Power :<b>60</b> <sub>M/W</sub> CPP Steam :<b>123</b> <sub>MT</sub> Renewable Power : <b
+            style="color: green;">25</b> <sub style="color: #00b050;">WM</sub>
+        <div style="position: relative;float: right; right: 26px;"> Last Updated Timestamp:<b>10/08/2021 00:00</b></div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="grid-container">
+
+            <div class="item">
+                <h5>Specific Energy Cost <br> (INR/MT Crude) <br><br><img src="graph.jpeg" width="150px" height="100px">
+                </h5>
+                <h5 style="color:  #8c9091">Deviation : 37.82 %</h5>
+                <h5>Actual | Optimals : 23.61 | 14.67</h5>
+            </div>
+
+
+            <div class="item">
+                <h5>Total Energy Consumed <br> Gcal/hr <br>
+                    <h1 style="font-size: 60px;">8000</h1>
+                </h5>
+                <div style=" position: relative; top: 26px;">
+                    <h5>REF:996.35 <button
+                            style="position: relative;  border-radius: 6px; padding: 5px; width: 81px;background-color: #ff0000;     margin-left: 34px; color: white; border: none;">*
+                            3.65 %</button></h5>
+                </div>
+            </div>
+
+            <div class="item">
+                <h5>Energy Intensity <br>Index <br>
+                    <h1 style="font-size: 60px;">95</h1>
+                </h5>
+                <div style=" position: relative; top: 26px;">
+                    <h5 style="position:relative;">REF:98.75 <button
+                            style="position: relative;  border-radius: 6px; padding: 5px; width: 81px;background-color: #00b050;     margin-left: 54px; color: white; border: none;">*
+                            3.65</button></h5>
+                </div>
+            </div>
+
+            <div class="item">
+                <h5>MBN<br>MBTU/Barrel/NRGF <br>
+                    <h1 style="font-size: 60px;">60</h1>
+                </h5>
+                <div style=" position: relative; top: 26px;">
+                    <h5 style="position:relative;">REF:59.75 <button
+                            style="position: relative;  border-radius: 6px; padding: 5px; width: 81px;background-color: #00b050;     margin-left: 41px; color: white; border: none;">*
+                            0.25</button></h5>
+                </div>
+            </div>
+
+            <div class="item">
+                <h5>GHG Emission(tCO2e)<br>(Ton/hr)<br>
+                    <h1 style="font-size: 60px;">359</h1>
+                </h5>
+                <div style=" position: relative; top: 26px;">
+                    <h5 style="position:relative;">REF:358.75 <button
+                            style="position: relative;  border-radius: 6px; padding: 5px; width: 81px;background-color: #ff0000;     margin-left: 35px; color: white; border: none;">-0.25</button>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="item">
+                <h5 style="position: relative; float: left; left: 13px;">Total Fuel Consumed</h5>
+                <div
+                    style="position: relative; height: 12px; width: 12px; float: left;left: 36px;top: 23px; border-radius: 50%;background-color: white;">
+                </div>
+                <h5 style="position:relative ;position: relative; right: 19px;">Ten/hr</h5>
+                <div
+                    style="position: relative; height: 12px; width: 12px; float: right; right: 63px; bottom: 38px;border-radius: 50%; background-color: white;">
+                </div>
+                <h5 style="position: relative; float: right;bottom: 61px;left: 3px;">Gcal/hr</h5>
+
+                <div class="pieContainer">
+                    <div class="pieBackground"></div>
+                    <div id="pieSlice1" class="hold">
+                        <div class="pie"></div>
+                    </div>
+                    <div id="pieSlice2" class="hold">
+                        <div class="pie"></div>
+                    </div>
+                    <div id="pieSlice3" class="hold">
+                        <div class="pie"></div>
+                    </div>
+                    <div id="pieSlice4" class="hold">
+                        <div class="pie"></div>
+                    </div>
+                    <div id="pieSlice5" class="hold">
+                        <div class="pie"></div>
+                    </div>
+                    <div id="pieSlice6" class="hold">
+                        <div class="pie"></div>
+                    </div>
+                    <div class="innerCircle">
+                        <div class="content">
+                            <h1>744</h1>
+                        </div>
+                    </div>
+                    <h5 style="position: relative; top: 82px; float: right; right: 57px;">64%</h5>
+                    <h5 style="position: relative; top: 39px; float: left; right: 27px;">25%</h5>
+                    <h5 style="position: relative; bottom: 37px; float: left;right: 1px;">11%</h5>
+
+                </div>
+                <div class="centr" style="position:relative; left: 25px; top: 11px;">
+
+                    <div
+                        style="height: 15px; width:15px; border-radius: 50%; background-color: rgb(232, 140, 28); position: relative; float: right;right: 109px; bottom: 130px;">
+                    </div>
+                    <h5 style="float: right; right: 50px;  position: relative; bottom: 152px;">Solid</h5>
+                    <div
+                        style="height: 15px; width:15px; border-radius: 50%; background-color: rgb(17, 235, 199); position: relative;float: right; right: 60px;bottom: 90px;">
+                    </div>
+                    <h5 style=" position: relative; float: right; bottom: 113px;left: 8px;">Liquid</h5>
+                    <div
+                        style="height: 16px; width: 16px;  border-radius: 50%; background-color: rgb(60, 60, 155); position: relative;  float: right; right: 4px; bottom: 48px;">
+                    </div>
+                    <h5 style="position: relative; float: right; left: 50px; bottom: 72px;">gas</h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container2">
+            <div class="item1">
+                <h5 style="position: relative; margin-left: 22px; color: antiquewhite; font-size: 19px;"><b
+                        style="position: relative; color: orange;font-size: 20px; bottom: 7px;">_</b>&nbsp; Total Energy
+                    Consumption (Geal/hr) &nbsp;<button
+                        style="position: relative; color: #0795cc; border: none; background: #0795cc;">c</button>&nbsp;Throughput
+                    (MT/Day)</h5>
+                <div style="position: relative; left:20px;">
+                    <div
+                        style="color:antiquewhite; position: relative; float: right; right: 457px; font-size: 13px; bottom: 72px;">
+                        Timel</div>
+                    <button class="dropbtn"
+                        style="position: relative; float: right; background: #26293c;border: 2px solid antiquewhite; color: antiquewhite; bottom: 51px; bottom: 51px;right: 273px; border-radius: 5px;">Total
+                        Energy Consumption
+                        <i class="fa fa-caret-down"></i></button>
+
+
+                    <button class="dropbtn"
+                        style="position: relative; float: right; background: #26293c;border: 2px solid antiquewhite; color: antiquewhite; bottom: 51px; left: 45px; border-radius: 5px;">9/08/2121
+                        00:00
+                        <i class="fa fa-caret-down"></i></button>
+                    <div
+                        style="color:antiquewhite; position: relative; float: right; left: 76px; bottom: 70px; font-size: 12px;">
+                        From</div>
+
+                    <button class="dropbtn"
+                        style="position: relative; float: right; background: #26293c;border: 2px solid antiquewhite; color: antiquewhite; bottom: 51px; left: 331px; border-radius: 5px;">10/08/2121
+                        00:00
+                        <i class="fa fa-caret-down"></i></button>
+                    <div
+                        style="color:antiquewhite; position: relative; float: right; left: 359px; bottom: 70px; font-size: 12px;">
+                        T0</div>
+
+                    <img src="business-graph.jpeg"
+                        style="width: 1061px; height: 215px; position: relative;bottom: 25px;">
+                </div>
+            </div>
+
+            <div class="item1">
+                <h3 style="position:relative ; color:antiquewhite; text-align: center;">Area-wise SEC Distribution</h3>
+                <h6 style="position:relative ; color:antiquewhite; text-align: center; bottom: 16px;">Deviation %
+                    (Reference - Actual)SEC</h6>
+
+                <div class="center">
+                    <button
+                        style="position:relative ; border: none; background: #00b050; height: 16px; width: 19px; bottom: 22px; left: 20px;"></button>
+                    <p
+                        style="position: relative; color: antiquewhite; bottom: 27px; font-size: 10px; float: right; right: 247px;">
+                        0 - 2 %</p>
+
+                    <button
+                        style="position:relative ; border: none; background: orange; height: 16px; width: 19px; bottom: 22px; left: 60px;"></button>
+                    <p
+                        style="position: relative; color: antiquewhite; bottom: 27px; font-size: 10px; float: right; right: 152px;">
+                        2 - 5 %</p>
+
+                    <button
+                        style="position:relative ; border: none; background: #ff0000; height: 16px; width: 19px; bottom: 22px; left: 99px;"></button>
+                    <p
+                        style="position: relative; color: antiquewhite; bottom: 27px; font-size: 10px; float: right; right: 56px;">
+                        5 - 8 %</p>
+
+                    <button
+                        style="position:relative ; border: none; background: rgb(198, 196, 196); height: 16px; width: 19px; bottom: 22px; left: 150px;"></button>
+                    <p
+                        style="position: relative; color: rgb(198, 196, 196); bottom: 27px; font-size: 10px; float: right; left: 51px;">
+                        <b>Offline</b>
+                    </p>
+
+                    <button style="background: #ff0000;
+  width: 66px;
+  padding: 6px;
+  border: none;
+  position: relative;
+  right: 112px;
+  top: 10px;
+  color: white;
+  border-radius: 6px;">HGU1</button>
+
+                    <button style="background: #00b050; width: 66px;
+   padding: 6px;
+   border: none;
+   color: white;
+   position: relative;
+   left: 68px;
+    bottom: 20px;
+   border-radius: 6px;">HGU2</button>
+
+                    <button style="background: #00b050;  width: 66px;
+    padding: 6px;
+    border: none;
+    color: white;
+    position: relative;
+    left: 85px;
+    bottom: 21px;
+    border-radius: 6px;">SRU</button>
+
+                    <button style="background: #00b050;  width: 66px;
+     padding: 6px;
+     border: none;
+     color: white;
+     position: relative;
+     left: 243px;
+    bottom: 50px;
+     border-radius: 6px;">DHDS</button>
+
+                    <button style="background: #00b050;  width: 66px;
+     padding: 6px;
+     border: none;
+     color: white;
+     position: relative;
+     bottom: 9px;
+     right: 2px;
+     border-radius: 6px;">DHDT</button>
+
+                    <button style="background: #00b050;  width: 66px;
+     padding: 6px;
+     border: none;
+     color: white;
+     position: relative;
+     left: 16px;
+     bottom: 9px;
+     border-radius: 6px;">PRIMEG</button>
+
+                    <button style="background: orange;
+     width: 66px;
+    padding: 6px;
+    border: none;
+    position: relative;
+    left: 32px;
+    bottom: 10px;
+    color: white;
+    border-radius: 6px;">FCCU</button>
+
+                    <button style="background: #00b050;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+right: 17px;
+    bottom: 35px;
+color: white;
+border-radius: 6px;">OHCU</button>
+
+                    <button style="background: #00b050;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+right: 87px;
+    top: 4px;
+color: white;
+border-radius: 6px;">MSQ</button>
+
+                    <button style="background: orange;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+right: 72px;
+    top: 3px;
+color: white;
+border-radius: 6px;">AVU</button>
+
+                    <button style="background: #00b050;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+right: 55px;
+    top: 4px;
+color: white;
+border-radius: 6px;">VBU</button>
+
+                    <button style="background: #00b050;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+left: 243px;
+    bottom: 24px;
+color: white;
+border-radius: 6px;">HGU3</button>
+
+
+                    <button style="background: #00b050;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+right: 86px;
+top: 16px;
+color: white;
+border-radius: 6px;">NSU</button>
+
+                    <button style="background: #00b050;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+right: 72px;
+top: 16px;
+color: white;
+border-radius: 6px;">PRU</button>
+
+                    <button style="background: #ff0000;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+right: 53px;
+top: 16px;
+color: white;
+border-radius: 6px;">GSU</button>
+
+                    <button style="background: #00b050;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+left: 243px;
+    bottom: 11px;
+color: white;
+border-radius: 6px;">SR4</button>
+
+                    <button style="background: #ff0000;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+right: 85px;
+ top: 27px;
+color: white;
+border-radius: 6px;">OLE</button>
+
+                    <button style="background: #00b050;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+top: 27px;
+    RIGHT: 72PX;
+color: white;
+border-radius: 6px;">OLE1</button>
+
+                    <button style="background: #00b050;
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+top: 27px;
+    RIGHT: 53PX;
+color: white;
+border-radius: 6px;">FCCU</button>
+
+                    <button style="background: rgb(198, 196, 196);
+width: 66px;
+padding: 6px;
+border: none;
+position: relative;
+left: 244px;
+    bottom: 0px;
+color: white;
+border-radius: 6px;">HCU</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

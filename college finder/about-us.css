@@ -1,0 +1,107 @@
+:root{
+    --bg-color: rgb(226, 246, 245);
+}
+main{
+    display: flex;
+    background-color: azure;
+    font-family: cursive , monospace;
+    background-color: var(--bg-color);
+}
+aside{
+    width: 35%;
+    height: 80vh;
+    background-color: azure;
+    /* border: 10px solid black; */
+    padding: 20px 60px;
+    
+}
+.square{
+    border: 20px solid sandybrown;
+    height: 90%;
+    width: 70%;
+    border-radius: 5px;
+    
+}
+.circle{
+    font-size: 5rem;
+    padding: 40px;
+    /* border: 5px solid black; */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.19);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    float: right;
+    margin-top: 50%;
+    translate: 55%;
+    background-color: azure;
+    animation: rotate 5s infinite;
+    text-align: end;
+    color: rgb(244, 204, 74);
+    text-shadow: 0 5px 2px; 
+    cursor:default;
+}
+@keyframes rotate {
+    0%{text-shadow: 0 0px 0px;}
+    25%{ text-shadow: 0 -8px 4px; }
+    50%{ text-shadow: 0 -8px 4px; }
+    75%{ text-shadow: 0 -5px 2px; }
+    100%{rotate: 360deg; text-shadow: 0 0px 0px;}
+    
+}
+.about-us{
+    padding: 15px 30px;
+    width: 60%;
+}
+.about-us p{
+    font-size:large;
+    text-justify: distribute;
+    font-family: cursive , monospace;
+}
+
+.icon-box{
+    margin: 20px;
+    position: absolute;
+    transform: translateY(200%);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+    }
+    
+aside{
+    width: 100%;
+    height:80vh;
+    background-color: azure;
+    /* border: 10px solid black; */
+    padding: 20px 60px;
+    
+}
+.square{
+    border: 20px solid sandybrown;
+    height: 60%;
+    width: 40%;
+    border-radius: 5px;
+}
+.circle{
+    font-size: 5rem;
+    padding: 40px;
+    /* border: 5px solid black; */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.19);
+    width: 1em;
+    height: 1em;
+    float: right;
+    margin-top: 50%;
+    translate: 55%;
+    animation: rotate 5s infinite;
+    text-align: end;
+
+    
+}
+.about-us{
+    padding: 15px;
+    width: 90%;
+}
+}

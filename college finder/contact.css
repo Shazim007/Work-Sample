@@ -1,0 +1,85 @@
+main{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+form{
+    /* height: 80vh; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.114);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+
+}
+input{
+    width: 60%;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.name{
+    width: 62%;
+    justify-content: flex-start;
+    display: flex;
+    gap: 1rem;
+}
+input[type="submit"]{
+    width: 20%;
+}
+
+.contact-heading{
+    text-transform: capitalize;
+    font-size: xx-large;
+}
+input[name="msg-box"]{
+    height: 7rem;
+    text-align:justify;
+}
+
+
+/* ............... */
+
+.contact-us{
+    height: 70vh;
+    width: 30%;
+    background-color: #8EC5FC;
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+    /* margin-left: -13rem; */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.222);
+    /* transition:margin 2s; */
+}
+.contact-us div{
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    gap: 1rem;
+    color: rgb(65, 65, 65);
+}
+
+.contact-us div h3{
+    /* border: 2px solid red; */
+
+}
+.contact-us div span{
+    /* border: 2px solid red;   */
+    height: fit-content;
+
+
+}
